@@ -6,7 +6,7 @@
 6. <a href="#what_not">What does RRest not do?
 
 <a name="what_is" />
-# What is RRest
+# What is RRest?
 RRest is a toolbox of algorithms for estimation of respiratory rate from physiological signals. It is written in Matlab format, and contains a wide range of algorithms previously reported in the literature. It is one part of a larger, [Respiratory Rate Estimation](http://peterhcharlton.github.io/RRest/) project. The project also contains additional material such as [data](http://peterhcharlton.github.io/RRest/datasets.html) to use with the algorithms, [publications](http://peterhcharlton.github.io/RRest/publications.html) arising from the project, and details of how to [contribute](http://peterhcharlton.github.io/RRest/contributions.html).
 
 <a name="what_does" />
@@ -26,8 +26,22 @@ RRest is a helpful resource for researchers in the field of respiratory rate est
 <a name="how_design" />
 # How is RRest designed?
 
+RRest is designed on the premise that RR algorithms can be segmented into three distinct components:
+
+* **Extraction of a respiratory signal**: Firstly, algorithms extract a signal dominated by respiration from the raw signal. In the case of impedance pneumography or accelerometry signals this is straightforward since the primary modulation of these signals is due to modulation. However, many physiological signals such as the ECG and PPG are secondarily modulated by respiration after the primary cardiac modulation. In these instances extended extraction techniques are required.
+
+* **Estimation of respiratory rate**: Secondly, a respiratory rate is estimated from a respiratory signal. This can be performed in either the time- or frequency-domain.
+
+* **Fusion of respiratory rates**: Thirdly, and optionally, multiple respiratory rates obtained using different methods can be fused to give one, hopefully more accurate, respiratory rate.
+
+RRest estimates a respiratory rate from either the ECG or PPG using a technique for each of components. Consequently, a large number of algorithms can be constructed by considering different combinations of techniques at each component.
+
+RRest is computationally efficient since algorithms which share common extraction steps only require these steps to be conducted once, rather than for each algorithm.
+
 <a name="how_more" />
 # How can I find out more?
+
+This Wiki provides acts as a user manual for the algorithms presented in this repository. For those interested in estimating respiratory rate from physiological signals, the wider [Respiratory Rate Estimation project](http://peterhcharlton.github.io/RRest/), of which this is a part, will be of interest. It also contains additional material such as data to use with the algorithms, publications arising from the project, and details of how to contribute.
 
 <a name="what_not" />
 # What does RRest not do?
