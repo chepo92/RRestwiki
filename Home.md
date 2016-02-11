@@ -1,3 +1,5 @@
+# RRest: A toolbox of Respiratory Rate Algorithms
+
 1. <a href="#what_is">What Is RRest?</a>
 
 2. <a href="#what_does">What does RRest do?</a>
