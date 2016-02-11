@@ -41,7 +41,9 @@ RRest is computationally efficient since algorithms which share common extractio
 <a name="how_more" />
 # How can I find out more?
 
-This Wiki provides acts as a user manual for the algorithms presented in this repository. For those interested in estimating respiratory rate from physiological signals, the wider [Respiratory Rate Estimation project](http://peterhcharlton.github.io/RRest/), of which this is a part, will be of interest. It also contains additional material such as data to use with the algorithms, publications arising from the project, and details of how to contribute.
+This Wiki acts as a user manual for the algorithms presented in this repository. The rest of the manual can be accessed via the links on the right-hand side.
+
+Additional information is available on the wider [Respiratory Rate Estimation project](http://peterhcharlton.github.io/RRest/) webpages. They contain links to publications describing the use of RRest. They also contain data which can be used with the algorithms.
 
 <a name="what_not" />
 # What does RRest not do?
