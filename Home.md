@@ -1,9 +1,15 @@
 1. <a href="#what_is">What Is RRest?</a>
+
 2. <a href="#what_does">What does RRest do?</a>
+
 3. <a href="#why">Why is RRest helpful?
+
 4. <a href="#how_design">How is RRest designed?
+
 5. <a href="#how_more">How can I find out more?
+
 6. <a href="#how_contribute">How can I contribute to RRest?
+
 7. <a href="#what_not">What does RRest not do?
 
 <a name="what_is" />
