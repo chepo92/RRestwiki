@@ -3,7 +3,8 @@
 3. <a href="#why">Why is RRest helpful?
 4. <a href="#how_design">How is RRest designed?
 5. <a href="#how_more">How can I find out more?
-6. <a href="#what_not">What does RRest not do?
+6. <a href="#how_contribute">How can I contribute to RRest?
+7. <a href="#what_not">What does RRest not do?
 
 <a name="what_is" />
 # What is RRest?
@@ -44,6 +45,11 @@ RRest is computationally efficient since algorithms which share common extractio
 This Wiki acts as a user manual for the algorithms presented in this repository. The rest of the manual can be accessed via the links on the right-hand side.
 
 Additional information is available on the wider [Respiratory Rate Estimation project](http://peterhcharlton.github.io/RRest/) webpages. They contain links to publications describing the use of RRest. They also contain data which can be used with the algorithms.
+
+<a name="how_contribute" />
+# How can I contribute to RRest?
+
+Contributions to RRest are most welcome. Whether compliments, criticisms, questions, or code, do [get in touch](http://peterhcharlton.github.io/RRest/contributions.html).
 
 <a name="what_not" />
 # What does RRest not do?
