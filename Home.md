@@ -1,3 +1,1 @@
-Welcome to the Respiratory-Rate-Estimation wiki!
-
-Information will be added in due course
+This Wiki provides acts as a user manual for the algorithms presented in this repository. For those interested in estimating respiratory rate from physiological signals, the wider [Respiratory Rate Estimation project](http://peterhcharlton.github.io/RRest/), of which this is a part, will be of interest. It also contains additional material such as data to use with the algorithms, publications arising from the project, and details of how to contribute.
