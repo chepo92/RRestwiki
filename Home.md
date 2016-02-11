@@ -59,7 +59,9 @@ Contributions to RRest are most welcome. Whether compliments, criticisms, questi
 
 <a name="what_not" />
 # What does RRest not do?
-As stated in the licence accompanying the source code, the algorithms are not intended to be fit for any purpose. Please see the [licence](https://github.com/peterhcharlton/RRest/blob/master/LICENSE) for further details. RRest will also not fly you to the moon and back. However, it may be reasonable to presume that similar algorithms were used to monitor the respiratory rate of the parachutist in the [Red Bull Stratos project](http://www.ncbi.nlm.nih.gov/pubmed/24597163), albeit applied to a strain gauge rather than the ECG or PPG.
+As stated in the licence accompanying the source code, the algorithms are not intended to be fit for any purpose. Please see the [licence](https://github.com/peterhcharlton/RRest/blob/master/LICENSE) for further details.
+
+RRest will also not fly you to the moon and back. However, it may be reasonable to presume that similar algorithms were used to monitor the respiratory rate of the parachutist in the [Red Bull Stratos project](http://www.ncbi.nlm.nih.gov/pubmed/24597163), albeit applied to a strain gauge rather than the ECG or PPG.
 
 
 ***
