@@ -1,1 +1,1 @@
-abc
+The toolbox contains signal quality algorithms which determine whether each window of ECG and/or PPG is of high or low quality.
