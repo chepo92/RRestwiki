@@ -1,1 +1,1 @@
-abc
+RRest requires a dataset on which to perform RR estimation. Several datasets are publicly available for use with RRest, as detailed at: 
