@@ -11,17 +11,17 @@ Here, it is important to understand that the algorithm toolbox is based on the a
 `up.al.key_components = {'extract_resp_sig', 'estimate_rr'};` <p>
 Alternatively, the additonal fusion stage can be added using:<p>
 `up.al.key_components = {'extract_resp_sig', 'estimate_rr', 'fuse_rr'};` <p>
-Further details on the stages of the algorithms are provided in [this publication|http://peterhcharlton.github.io/RRest/yhvs_assessment.html].
+Further details on the stages of the algorithms are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
 **Specify the methods for extraction of respiratory signals:** <p>
 Techniques for extraction of respiratory signals have been categorised into one of two methods: filter-based extraction, and feature-based extraction. Filter-based extraction includes techniques such as band-pass filtering to eliminate non-respiratory frequencies, and wavelet decomposition. Feature-based extraction consists of extracting a measurement, such as pulse wave amplitude, from each cardiac cycle. Any number of the following approaches, consisting of signal and respiratory signal extraction method, can be specified:<p>
 `up.al.options.extract_resp_sig = {'ekg_filt', 'ppg_filt', 'ekg_feat', 'ppg_feat',};` <p>
-Further details on the methods for extraction of respiratory signals are provided in [this publication|http://peterhcharlton.github.io/RRest/yhvs_assessment.html].
+Further details on the methods for extraction of respiratory signals are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
 **Specify the components for feature-based extraction of respiratory signals:** <p>
 If you choose to include the feature-based method for extraction of respiratory signals then you will need to specify (or leave alone) the components contained within this method for each signal:<p>
 `up.al.sub_components.ppg_feat = {'EHF', 'PDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
 `up.al.sub_components.ekg_feat = {'EHF', 'RDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
-Further details on the components for feature-based extraction of respiratory signals are provided in [this publication|http://peterhcharlton.github.io/RRest/yhvs_assessment.html].
+Further details on the components for feature-based extraction of respiratory signals are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
 ## Analysis Settings
