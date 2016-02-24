@@ -8,6 +8,13 @@ Further down the _setup_universal_params.m_ you will find a section titled "Spec
 
 **Specify the stages of the algorithms:** <p>
 Here, it is important to understand that the algorithm toolbox is based on the assumption that all RR algorithms can be separated into three fundamental stages:<p> 
+1. abbc
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+
 1. extraction of a respiratory signal (a time series dominated by respiratory modulation),
 2. estimation of RR from that respiratory signal, and optionally
 3. fusion of multiple RRs to provide one output.
