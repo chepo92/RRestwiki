@@ -16,7 +16,15 @@ A dataset must be stored in a Matlab structure array called _data_ to be used wi
 
 * _id_ : _e.g._ `data(1).id = '001'` , `data(2).id = '002'` , _etc._
 * _pleth_ : _e.g._ `data(1).pleth.fs = 125` , specifying the sampling rate in Hz, and `data(1).pleth.signal_e_vlf.y.v = [1,2,3,2,1]` , where [1,2,3,2,1] is the row vector of PPG values for this recording.
+* _ekg_ : _e.g._ `data(1).ekg.fs = 125` , specifying the sampling rate in Hz, and `data(1).ekg.signal_e_vlf.y.v = [1,2,3,2,1]` , where `[1,2,3,2,1]` is the row vector of ECG values for this recording.
 
+It must also contain reference respiratory data. This can either be specified as the timings of individual breaths, or as a reference respiratory signal. To specify the timings of individual breaths:
+
+* _reference_ : _e.g._ `data(1).reference.breaths.t = [1.2,3.7,5.1,6.2]`, where `[1.2,3.7,5.1,6.2]` is the row vector of breath timings in seconds.
+
+To specify a reference respiratory signal (in this case an impedance, _imp_ , signal:
+
+* _imp_ : _e.g._ `data(1).imp.signal_e_vlf.y` = [1,2,3,2,1]` , where `[1,2,3,2,1]` is the row vector of impedance values for this recording.
 
 ### Saving your dataset in the appropriate location
 Take the following steps to ensure that your data is saved in an appropriate location for _RRest_ to be able to find it:
