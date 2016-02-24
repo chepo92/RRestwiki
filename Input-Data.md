@@ -1,7 +1,7 @@
 _RRest_ requires a dataset on which to perform RR estimation. Several datasets are publicly available for use with _RRest_, as detailed [here](http://peterhcharlton.github.io/RRest/datasets.html). You may also wish to use your own dataset. This page provides an overview of how to provide Input Data to RRest.
 
 ## Using Publicly Available Datasets
-[Publicly available datasets](http://peterhcharlton.github.io/RRest/datasets.html) are either provided in the required format for use with the RRest toolbox (such as the Vortal Dataset), or a 'data_importer' script is provided to download and re-format the data to prepare it for use with RRest (such as with the MIMICII Dataset). 'data_importer' scripts can be found 
+[Publicly available datasets](http://peterhcharlton.github.io/RRest/datasets.html) are either provided in the required format for use with the _RRest_ toolbox (such as the Vortal Dataset), or a 'data_importer' script is provided to download and re-format the data to prepare it for use with _RRest_ (such as with the MIMICII Dataset). 'data_importer' scripts can be found 
 [here](https://github.com/peterhcharlton/RRest/tree/master/Data_Import).
 
 Once you have downloaded a dataset, you are ready to use RRest. You should specify its location to _RRest_ in the _up.paths.root_data_folder_ variable, in the _setup_universal_params.m_ script.
@@ -25,6 +25,10 @@ It must also contain reference respiratory data. This can either be specified as
 To specify a reference respiratory signal (in this case an impedance, _imp_ , signal:
 
 * _imp_ : _e.g._ `data(1).imp.signal_e_vlf.y` = [1,2,3,2,1]` , where `[1,2,3,2,1]` is the row vector of impedance values for this recording.
+
+In addition, individual recordings can be assigned to groups. For instance, in the [synthetic dataset](http://peterhcharlton.github.io/RRest/synthetic_dataset.html) the signals are assigned to baseline wander (_bw_), amplitude modulation (_am_) and frequency modulation (_fm_) groups. Groups can be called by any string name you wish. If you do specify groups then a sub-group analysis will be performed as well as the analysis of the entire dataset. To specify a group use the following field:
+
+* _group* : _e.g._ `data(1).group = 'bw'`
 
 ### Saving your dataset in the appropriate location
 Take the following steps to ensure that your data is saved in an appropriate location for _RRest_ to be able to find it:
