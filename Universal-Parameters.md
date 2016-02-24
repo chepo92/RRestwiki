@@ -1,8 +1,7 @@
 The _Universal Parameters_ are a set of parameters which are used throughout the toolbox. The File Paths are the only settings which **must** be set by each user to ensure that the analysis runs smoothly on their computer. All other settings can be left alone unless you want to alter the analysis configurations:
 
 # File Paths
-These are easily found towards the top of _setup_universal_params.m_, under the heading "PARAMETERS TO BE SPECIFIED". Additional instructions are provided in the file itself.
-
+These are easily found towards the top of _setup_universal_params.m_, and should be specified for your specific computer.
 
 # Algorithms
 Further down the _setup_universal_params.m_ you will find a section titled "Specify the components of RR algorithms to be tested". The settings in this section specify which algorithms will be run. The following settings are recommended to run the full set of algorithms:
@@ -104,5 +103,14 @@ The techniques are as follows:
 
 4. Wavelet extraction of amplitude modulation (_Wam_ , [ref](http://www.worldscientific.com/doi/abs/10.1142/S0219691304000329))
 
+## Specify the interchangeable technique(s) for RR Estimation
+The techniques to be used for estimation of RRs from respiratory signals must be specified. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following to specify all implemented techniques for use on both ECG and PPG signals:<p>
+`up.al.options.estimate_rr = {'FTS', 'ACF', 'ARPz', 'WCH', 'ARM', 'ARP', 'CtO', 'CtA', 'ARS', 'PKS', 'ZeX', 'PZX'};`
+
+The techniques are as follows:
+
+1. Fourier Transform (_FTS_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
+
+2. 
 
 ## Analysis Settings
