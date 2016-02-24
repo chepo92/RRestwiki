@@ -47,7 +47,7 @@ These are specified for each signal using the following:
 `up.al.sub_components.ekg_feat = {'EHF', 'RDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
 It is recommended that these are left alone. Further details on the components for feature-based extraction of respiratory signals are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
-## Specify the technique(s) to be used for each component of feature-based extraction of respiratory signals:
+## Specify the interchangeable technique(s) to be used for each component of feature-based extraction of respiratory signals:
 Now that the components of feature-based extraction have been specified, you can specify which technique(s) you would like to use for each component. If you specify multiple techniques for any component, then the code will run all possible combinations of the specified techniques. At least one techniques should be specified for each of the following components:
 
 ### Beat detection
@@ -89,7 +89,19 @@ Next the irregularly-sampled feature-based respiratory signals are resampled at 
 
 `up.al.options.RS = {'lin', 'linB', 'cub', 'cubB', 'brg', 'brgB'};`
 
-## Specify techniques for filter-based extraction of respiratory signals:
-Similarly, the techniques to be used for filter-based extraction of respiratory signals must be specified. The implemented techniques are
+## Specify the interchangeable techniques for filter-based extraction of respiratory signals:
+Similarly, the techniques to be used for filter-based extraction of respiratory signals must be specified. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following to specify all implemented techniques:<p>
+`up.al.options.ekg_filt = {'Wfm', 'Wam', 'CCF', 'BFi'};<p>
+up.al.options.ppg_filt = {'Wfm', 'Wam', 'CCF', 'BFi'};`
 
+
+The implemented techniques are:  (_BFi_, [ref]),  (_CCF_)
+
+1. Band-pass filtering (_BFi_ , [ref](https://zaguan.unizar.es/record/31895))
+
+2. Filtering using the centred-correntropy function (_CCF_ , [ref](doi.org/10.1109/TBME.2013.2246160))
+
+3. Frequency Modulation (_fm_ , [ref](doi.org/10.1109/TBME.2013.2246160))
+
+4. Baseline Wander (_bw_ , [ref](http://peterhcharlton.github.io/RRest/yhvs_assessment.html))
 ## Analysis Settings
