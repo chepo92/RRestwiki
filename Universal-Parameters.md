@@ -7,7 +7,11 @@ These are easily found towards the top of _setup_universal_params.m_, under the 
 Further down the _setup_universal_params.m_ you will find a section titled "Specify the components of RR algorithms to be tested". The settings in this section specify which algorithms will be run. The following settings are recommended to run the full set of algorithms:
 
 **Specify the stages of the algorithms:** <p>
-Here, it is important to understand that the algorithm toolbox is based on the assumption that all RR algorithms can be separated into three fundamental stages: (i) extraction of a respiratory signal (a time series dominated by respiratory modulation), (ii) estimation of RR from that respiratory signal, and optionally (iii) fusion of multiple RRs to provide one output. Specification of the first two is compulsory, _extract_resp_sig_ and _estimate_rr_. The third component, _fuse_rr_, is optional. For instance, to specify the simplest possible algorithms, without fusion, use:<p>
+Here, it is important to understand that the algorithm toolbox is based on the assumption that all RR algorithms can be separated into three fundamental stages:
+i. extraction of a respiratory signal (a time series dominated by respiratory modulation),
+ii. estimation of RR from that respiratory signal, and optionally
+iii. fusion of multiple RRs to provide one output.
+Specification of the first two is compulsory, _extract_resp_sig_ and _estimate_rr_. The third component, _fuse_rr_, is optional. For instance, to specify the simplest possible algorithms, without fusion, use:<p>
 `up.al.key_components = {'extract_resp_sig', 'estimate_rr'};` <p>
 Alternatively, the additonal fusion stage can be added using:<p>
 `up.al.key_components = {'extract_resp_sig', 'estimate_rr', 'fuse_rr'};` <p>
