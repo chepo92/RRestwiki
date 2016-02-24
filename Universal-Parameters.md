@@ -50,10 +50,12 @@ It is recommended that these are left alone. Further details on the components f
 ## Specify the technique(s) to be used for each component of feature-based extraction of respiratory signals:
 Now that the components of feature-based extraction have been specified, you can specify which technique(s) you would like to use for each component. If you specify multiple techniques for any component, then the code will run all possible combinations of the specified techniques. At least one techniques should be specified for each of the following components:
 
-### PPG pulse peak or R-spike detection
-One PPG Pulse peak detector has been implemented:
+### Beat detection
+One PPG Pulse peak detector has been implemented: the Incremental-Merge Segmentation algorithm presented in [this publication](doi.org/10.1109/TBME.2013.2246160).<p>
 `up.al.options.PDt = {'IMS'};`
-This is an implementation of the Incremental-Merge Segmentation algorithm presented in [this publication](doi.org/10.1109/TBME.2013.2246160).
+
+One ECG Beat detector has been used with the toolbox: the _rpeakdetect.m_ function written by Prof G. Clifford, which is available [here](http://www.mit.edu/~gari/CODE/ECGtools/ecgBag/rpeakdetect.m).<p>
+`up.al.options.RDt = {'GC'};`
 
 ### Fiducial point identification
 
