@@ -51,15 +51,23 @@ It is recommended that these are left alone. Further details on the components f
 Now that the components of feature-based extraction have been specified, you can specify which technique(s) you would like to use for each component. If you specify multiple techniques for any component, then the code will run all possible combinations of the specified techniques. At least one techniques should be specified for each of the following components:
 
 ### Beat detection
-One PPG Pulse peak detector has been implemented: the Incremental-Merge Segmentation algorithm presented in [this publication](doi.org/10.1109/TBME.2013.2246160).<p>
+One PPG Pulse peak detector has been implemented: the Incremental-Merge Segmentation algorithm presented in [this publication](10.1109/EMBC.2012.6346628).<p>
 `up.al.options.PDt = {'IMS'};`
 
 One ECG Beat detector has been used with the toolbox: the _rpeakdetect.m_ function written by Prof G. Clifford, which is available [here](http://www.mit.edu/~gari/CODE/ECGtools/ecgBag/rpeakdetect.m).<p>
 `up.al.options.RDt = {'GC'};`
 
-### Fiducial point identification
-
 ### Feature Measurement
+Several techniques for measurement of features in ECG and/or PPG signals have been implemented. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
+
+1. PPG Pulse Width ([ref](https://zaguan.unizar.es/record/31895))
+
+2. Amplitude Modulation ([ref](doi.org/10.1109/TBME.2013.2246160))
+
+Use the following to specify all implemented techniques:<p>
+`up.al.options.FMe = {'pulW', 'am', 'fm', 'bw', 'pk', 'on', 'bwm', 'qrsW', 'qrsA', 'pca'};`
+
+Further details on feature measurement techniques are provided in 
 
 ### Re-sampling
 
