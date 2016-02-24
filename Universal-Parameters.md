@@ -19,7 +19,7 @@ Techniques for extraction of respiratory signals have been categorised into one 
 Further details on the methods for extraction of respiratory signals are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
 **Specify the components for feature-based extraction of respiratory signals:** <p>
-If you choose to include the feature-based method for extraction of respiratory signals then you will need to specify (or leave alone) the components contained within this method for each signal:<p>
+If you choose to include the feature-based method for extraction of respiratory signals then you will need to specify (or leave alone) the components contained within this method for each signal: (i) Elimination of high frequencies (_EHF_); (ii) PPG pulse peak or R-spike detection (_PDt_ or _RDt_); (iii) Fiducial point identification (_FPt_); (iv) Feature Measurement (_FMe_); (v) Re-sampling (_RS_); (vi) Elimination of low frequencies (_ELF_).<p>
 `up.al.sub_components.ppg_feat = {'EHF', 'PDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
 `up.al.sub_components.ekg_feat = {'EHF', 'RDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
 Further details on the components for feature-based extraction of respiratory signals are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
