@@ -7,3 +7,6 @@ Several datasets are compatible with the toolbox (as listed [here](http://peterh
 The _Universal Parameters_ are a set of parameters which are used throughout the toolbox. In particular, the File Paths must be set for your own computer. Apart from these, all other parameters can be left alone to get started.
 
 ## Run your first analysis
+_RRest_ is the main script which runs the analysis. It takes a single input specifying the dataset to be analysed. Use a command such as this to run _RRest_:
+
+`RRest('mimic')`
