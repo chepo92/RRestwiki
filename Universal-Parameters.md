@@ -98,7 +98,7 @@ The techniques are as follows:
 
 1. Band-pass filtering (_BFi_ , [ref](http://www.ncbi.nlm.nih.gov/pubmed/1293445))
 
-2. Filtering using the centred-correntropy function (_CCF_ , [ref](doi.org/10.1371/journal.pone.0086427))
+2. Filtering using the centred-correntropy function (_CCF_ , [ref](http://doi.org/10.1371/journal.pone.0086427))
 
 3. Wavelet extraction of frequency modulation (_Wfm_ , [ref](http://www.worldscientific.com/doi/abs/10.1142/S0219691304000329))
 
