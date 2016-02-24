@@ -1,3 +1,7 @@
+# heading 1
+## heading 2
+### heading 3
+
 The _Universal Parameters_ are a set of parameters which are used throughout the toolbox. The File Paths are the only settings which **must** be set by each user to ensure that the analysis runs smoothly on their computer. All other settings can be left alone unless you want to alter the analysis configurations:
 
 ## File Paths
