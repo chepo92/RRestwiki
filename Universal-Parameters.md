@@ -28,17 +28,40 @@ Further details on the methods for extraction of respiratory signals are provide
 
 **Specify the components for feature-based extraction of respiratory signals:** <p>
 If you choose to include the feature-based method for extraction of respiratory signals then you will need to specify (or leave alone) the components contained within this method for each signal:
-<ol>
-<li>Elimination of high frequencies (_EHF_);</li>
-<li>PPG pulse peak or R-spike detection (_PDt_ or _RDt_);</li>
-<li>Fiducial point identification (_FPt_);</li>
-<li>Feature Measurement (_FMe_);</li>
-<li>Re-sampling (_RS_);</li>
-<li>Elimination of low frequencies (_ELF_).</li>
-</ol>
+
+1. Elimination of high frequencies (_EHF_);
+
+2. PPG pulse peak or R-spike detection (_PDt_ or _RDt_);
+
+3. Fiducial point identification (_FPt_);
+
+4. Feature Measurement (_FMe_);
+
+5. Re-sampling (_RS_);
+
+6. Elimination of low frequencies (_ELF_).
+
 These are specified for each signal using the following:
 `up.al.sub_components.ppg_feat = {'EHF', 'PDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
 `up.al.sub_components.ekg_feat = {'EHF', 'RDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
 It is recommended that these are left alone. Further details on the components for feature-based extraction of respiratory signals are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
+
+**Specify the technique(s) to be used for each component of feature-based extraction of respiratory signals:** <p>
+Now that the components of feature-based extraction have been specified, you can specify which technique(s) you would like to use for each component. If you specify multiple techniques for any component, then the code will run all possible combinations of the specified techniques. At least one techniques should be specified for each of the following components:
+
+### PPG pulse peak or R-spike detection (_PDt_ or _RDt_) ###
+
+3. Fiducial point identification (_FPt_);
+
+4. Feature Measurement (_FMe_);
+
+5. Re-sampling (_RS_);
+
+6. Elimination of low frequencies (_ELF_).
+
+These are specified for each signal using the following:
+`up.al.sub_components.ppg_feat = {'EHF', 'PDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
+`up.al.sub_components.ekg_feat = {'EHF', 'RDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
+Further details on the techniques are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
 ## Analysis Settings
