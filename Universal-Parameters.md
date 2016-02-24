@@ -5,7 +5,7 @@ These are easily found towards the top of _setup_universal_params.m_, under the 
 
 ## Algorithms
 Further down the _setup_universal_params.m_ you will find a section titled "Specify the components of RR algorithms to be tested". The settings in this section specify which algorithms will be run. The following settings are recommended to run the full set of algorithms:
-
+### 
 **Specify the stages of the algorithms:** <p>
 Here, it is important to understand that the algorithm toolbox is based on the assumption that all RR algorithms can be separated into three fundamental stages:<p> 
 
@@ -49,7 +49,7 @@ It is recommended that these are left alone. Further details on the components f
 **Specify the technique(s) to be used for each component of feature-based extraction of respiratory signals:** <p>
 Now that the components of feature-based extraction have been specified, you can specify which technique(s) you would like to use for each component. If you specify multiple techniques for any component, then the code will run all possible combinations of the specified techniques. At least one techniques should be specified for each of the following components:
 
-### PPG pulse peak or R-spike detection (_PDt_ or _RDt_) ###
+### PPG pulse peak or R-spike detection (_PDt_ or _RDt_)
 
 3. Fiducial point identification (_FPt_);
 
