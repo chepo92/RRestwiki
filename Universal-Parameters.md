@@ -87,11 +87,9 @@ The techniques are as follows:
 
 Next the irregularly-sampled feature-based respiratory signals are resampled at a constant sampling rate using linear, interpolation, cubic spline interpolation, or [Berger's method](doi.org/10.1109/TBME.1986.325789). These techniques can be optionally followed by band-pass filtering if desired, by adding _B_ to the end of the name. The possible options are:
 
-`up.al.options.RS = {'cub', 'cubB', 'brg', 'lin', 'brgB', 'linB'};`
+`up.al.options.RS = {'lin', 'linB', 'cub', 'cubB', 'brg', 'brgB'};`
 
-
-### Elimination of low frequencies
-
-Further details on the implemented techniques are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
+## Specify techniques for filter-based extraction of respiratory signals:
+Similarly, the techniques to be used for filter-based extraction of respiratory signals must be specified. The implemented techniques are
 
 ## Analysis Settings
