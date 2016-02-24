@@ -8,7 +8,12 @@ Further down the _setup_universal_params.m_ you will find a section titled "Spec
 
 **Specify the components of the algorithms:** <p>
 Here, it is important to understand that the algorithm toolbox is based on the assumption that all RR algorithms can be separated into three fundamental components: (i) extraction of a respiratory signal (a time series dominated by respiratory modulation), (ii) estimation of RR from that respiratory signal, and optionally (iii) fusion of multiple RRs to provide one output. Specification of the first two _key components_ is compulsory, _extract_resp_sig_ and _estimate_rr_. The third component, _fuse_rr_, is optional. For instance, to specify the simplest possible algorithms, without fusion, use:<p>
-`up.al.key_components = {'extract_resp_sig', 'estimate_rr', 'fuse_rr'};`
-A
+`up.al.key_components = {'extract_resp_sig', 'estimate_rr'};` <p>
+Alternatively, the additonal fusion component can be added using:<p>
+`up.al.key_components = {'extract_resp_sig', 'estimate_rr', 'fuse_rr'};` <p>
+
+**Specify the methods for extraction of respiratory signals:** <p>
+Techniques for extraction of respiratory signals have been categorised into one of two methods: filter-based extraction, and feature-based extraction. Filter-based extraction includes techniques such as band-pass filtering to eliminate non-respiratory frequencies, and wavelet decomposition. Feature-based extraction consists of extracting a measurement, such as pulse wave amplitude, from each cardiac cycle. Any number of the following approaches, consisting of signal and respiratory signal extraction method, can be specified:<p>
+up.al.options.extract_resp_sig = {'ekg_filt', 'ppg_filt', 'ekg_feat', 'ppg_feat',}; <p>
 
 ## Analysis Settings
