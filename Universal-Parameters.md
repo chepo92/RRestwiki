@@ -90,18 +90,19 @@ Next the irregularly-sampled feature-based respiratory signals are resampled at 
 `up.al.options.RS = {'lin', 'linB', 'cub', 'cubB', 'brg', 'brgB'};`
 
 ## Specify the interchangeable techniques for filter-based extraction of respiratory signals:
-Similarly, the techniques to be used for filter-based extraction of respiratory signals must be specified. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following to specify all implemented techniques:<p>
-`up.al.options.ekg_filt = {'Wfm', 'Wam', 'CCF', 'BFi'};<p>
-up.al.options.ppg_filt = {'Wfm', 'Wam', 'CCF', 'BFi'};`
+Similarly, the techniques to be used for filter-based extraction of respiratory signals must be specified. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following to specify all implemented techniques for use on both ECG and PPG signals:<p>
+`up.al.options.ekg_filt = {'Wfm', 'Wam', 'CCF', 'BFi'};`<p>
+`up.al.options.ppg_filt = {'Wfm', 'Wam', 'CCF', 'BFi'};`<p>
+
+The techniques are as follows:
+
+1. Band-pass filtering (_BFi_ , [ref](http://www.ncbi.nlm.nih.gov/pubmed/1293445))
+
+2. Filtering using the centred-correntropy function (_CCF_ , [ref](doi.org/10.1371/journal.pone.0086427))
+
+3. Wavelet extraction of frequency modulation (_Wfm_ , [ref](http://www.worldscientific.com/doi/abs/10.1142/S0219691304000329))
+
+4. Wavelet extraction of amplitude modulation (_Wam_ , [ref](http://www.worldscientific.com/doi/abs/10.1142/S0219691304000329))
 
 
-The implemented techniques are:  (_BFi_, [ref]),  (_CCF_)
-
-1. Band-pass filtering (_BFi_ , [ref](https://zaguan.unizar.es/record/31895))
-
-2. Filtering using the centred-correntropy function (_CCF_ , [ref](doi.org/10.1109/TBME.2013.2246160))
-
-3. Frequency Modulation (_fm_ , [ref](doi.org/10.1109/TBME.2013.2246160))
-
-4. Baseline Wander (_bw_ , [ref](http://peterhcharlton.github.io/RRest/yhvs_assessment.html))
 ## Analysis Settings
