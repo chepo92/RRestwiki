@@ -58,7 +58,10 @@ One ECG Beat detector has been used with the toolbox: the _rpeakdetect.m_ functi
 `up.al.options.RDt = {'GC'};`
 
 ### Feature Measurement
-Several techniques for measurement of features in ECG and/or PPG signals have been implemented. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
+Several techniques for measurement of features in ECG and/or PPG signals have been implemented. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following to specify all implemented techniques:<p>
+`up.al.options.FMe = {'pulW', 'am', 'fm', 'bw', 'pk', 'on', 'bwm', 'qrsW', 'qrsA', 'pca'};`
+
+The techniques are as follows:
 
 1. PPG Pulse Width (_pulW_ , [ref](https://zaguan.unizar.es/record/31895))
 
@@ -80,11 +83,12 @@ Several techniques for measurement of features in ECG and/or PPG signals have be
 
 10. Principle Component Analysis (_pca_ , [ref](doi.org/10.1109/TBME.2012.2186448)): _note that for this the freely available toolbox written by the LS-SVMlab, [here](http://www.esat.kuleuven.be/sista/lssvmlab/), was used._
 
-Use the following to specify all implemented techniques:<p>
-`up.al.options.FMe = {'pulW', 'am', 'fm', 'bw', 'pk', 'on', 'bwm', 'qrsW', 'qrsA', 'pca'};`
-
-
 ### Re-sampling
+
+Next the irregularly-sampled feature-based respiratory signals are resampled at a constant sampling rate using linear, interpolation, cubic spline interpolation, or [Berger's method](doi.org/10.1109/TBME.1986.325789). These techniques can be optionally followed by band-pass filtering if desired, by adding _B_ to the end of the name. The possible options are:
+
+`up.al.options.RS = {'cub', 'cubB', 'brg', 'lin', 'brgB', 'linB'};`
+
 
 ### Elimination of low frequencies
 
