@@ -12,9 +12,10 @@ You may alternatively wish to analyse your own dataset with _RRest_. There are t
 ### Formatting your dataset
 The easiest way to understand how to format your dataset for use with _RRest_ is to look at an example, such as the synthetic dataset presented [here](http://peterhcharlton.github.io/RRest/synthetic_dataset.html).
 
-A dataset must be stored in a Matlab structure array called _data_ to be used with _RRest_. The structure array should be of dimension [1, n], where n is the number of recordings. Each contain the following fields:
+A dataset must be stored in a Matlab structure array called _data_ to be used with _RRest_. The structure array should be of dimension [1, n], where n is the number of recordings. The structure array should contain the following fields:
 
 * _id_ : _e.g._ `data(1).id = '001'` , `data(2).id = '002'` , _etc._
+* _pleth_ : _e.g._ `data(1).pleth.fs = 125` , specifying the sampling rate in Hz, and `data(1).pleth.signal_e_vlf.y.v = [1,2,3,2,1]` , where [1,2,3,2,1] is the row vector of PPG values for this recording.
 
 
 ### Saving your dataset in the appropriate location
