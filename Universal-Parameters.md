@@ -50,16 +50,19 @@ It is recommended that these are left alone. Further details on the components f
 ## Specify the technique(s) to be used for each component of feature-based extraction of respiratory signals:
 Now that the components of feature-based extraction have been specified, you can specify which technique(s) you would like to use for each component. If you specify multiple techniques for any component, then the code will run all possible combinations of the specified techniques. At least one techniques should be specified for each of the following components:
 
-### PPG pulse peak or R-spike detection (_PDt_ or _RDt_)
+### PPG pulse peak or R-spike detection
+One PPG Pulse peak detector has been implemented:
+`up.al.options.PDt = {'IMS'};`
+This is an implementation of the Incremental-Merge Segmentation algorithm presented in [this publication](doi.org/10.1109/TBME.2013.2246160).
 
-### Fiducial point identification (_FPt_);
+### Fiducial point identification
 
-### Feature Measurement (_FMe_);
+### Feature Measurement
 
-### Re-sampling (_RS_);
+### Re-sampling
 
-### Elimination of low frequencies (_ELF_).
+### Elimination of low frequencies
 
-Further details on the techniques are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
+Further details on the implemented techniques are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
 ## Analysis Settings
