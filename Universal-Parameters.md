@@ -6,8 +6,7 @@ A subset of the file paths are the only settings which **must** be set by each u
 ## Algorithms
 Further down the _setup_universal_params.m_ you will find a section titled "Specify the components of RR algorithms to be tested". The settings in this section specify which algorithms will be run. The following settings are recommended to run the full set of algorithms:
 
-- Specify the components of the algorithms:
-
+**Specify the components of the algorithms:** <p>
 `up.al.key_components = {'extract_resp_sig', 'estimate_rr', 'fuse_rr'};`
 
 ## Analysis Settings
