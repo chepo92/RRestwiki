@@ -7,7 +7,7 @@ These are easily found towards the top of _setup_universal_params.m_, under the 
 Further down the _setup_universal_params.m_ you will find a section titled "Specify the components of RR algorithms to be tested". The settings in this section specify which algorithms will be run. The following settings are recommended to run the full set of algorithms:
 
 **Specify the stages of the algorithms:** <p>
-Here, it is important to understand that the algorithm toolbox is based on the assumption that all RR algorithms can be separated into three fundamental stages:
+Here, it is important to understand that the algorithm toolbox is based on the assumption that all RR algorithms can be separated into three fundamental stages:<p> 
 1. extraction of a respiratory signal (a time series dominated by respiratory modulation),
 2. estimation of RR from that respiratory signal, and optionally
 3. fusion of multiple RRs to provide one output.
