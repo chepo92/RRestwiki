@@ -60,14 +60,29 @@ One ECG Beat detector has been used with the toolbox: the _rpeakdetect.m_ functi
 ### Feature Measurement
 Several techniques for measurement of features in ECG and/or PPG signals have been implemented. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
-1. PPG Pulse Width ([ref](https://zaguan.unizar.es/record/31895))
+1. PPG Pulse Width (_pulW_ , [ref](https://zaguan.unizar.es/record/31895))
 
-2. Amplitude Modulation ([ref](doi.org/10.1109/TBME.2013.2246160))
+2. Amplitude Modulation (_am_ , [ref](doi.org/10.1109/TBME.2013.2246160))
+
+3. Frequency Modulation (_fm_ , [ref](doi.org/10.1109/TBME.2013.2246160))
+
+4. Baseline Wander (_bw_ , [ref](http://peterhcharlton.github.io/RRest/yhvs_assessment.html))
+
+5. Peak Amplitude (_pk_ , [ref](doi.org/10.1109/TBME.2013.2246160))
+
+6. Trough Amplitude (_on_ , [ref](doi.org/10.1109/ICASSP.2010.5495584))
+
+7. Mean Baseline Wander (_bwm_ , [ref](doi.org/10.1109/ICASSP.2010.5495584))
+
+8. QRS duration (_qrsW_ , [ref](http://medicalresearchjournal.org/index.php/GJMR/article/view/315))
+
+9. QRS area (_qrsA_ , [ref](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5738022))
+
+10. Principle Component Analysis (_pca_ , [ref](doi.org/10.1109/TBME.2012.2186448)): _note that for this the freely available toolbox written by the LS-SVMlab, [here](http://www.esat.kuleuven.be/sista/lssvmlab/), was used._
 
 Use the following to specify all implemented techniques:<p>
 `up.al.options.FMe = {'pulW', 'am', 'fm', 'bw', 'pk', 'on', 'bwm', 'qrsW', 'qrsA', 'pca'};`
 
-Further details on feature measurement techniques are provided in 
 
 ### Re-sampling
 
