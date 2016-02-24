@@ -51,7 +51,7 @@ It is recommended that these are left alone. Further details on the components f
 Now that the components of feature-based extraction have been specified, you can specify which technique(s) you would like to use for each component. If you specify multiple techniques for any component, then the code will run all possible combinations of the specified techniques. At least one techniques should be specified for each of the following components:
 
 ### Beat detection
-One PPG Pulse peak detector has been implemented: the Incremental-Merge Segmentation algorithm presented in [this publication](10.1109/EMBC.2012.6346628).<p>
+One PPG Pulse peak detector has been implemented: the Incremental-Merge Segmentation algorithm presented in [this publication](http://doi.org/10.1109/EMBC.2012.6346628).<p>
 `up.al.options.PDt = {'IMS'};`
 
 One ECG Beat detector has been used with the toolbox: the _rpeakdetect.m_ function written by Prof G. Clifford, which is available [here](http://www.mit.edu/~gari/CODE/ECGtools/ecgBag/rpeakdetect.m).<p>
@@ -65,23 +65,23 @@ The techniques are as follows:
 
 1. PPG Pulse Width (_pulW_ , [ref](https://zaguan.unizar.es/record/31895))
 
-2. Amplitude Modulation (_am_ , [ref](doi.org/10.1109/TBME.2013.2246160))
+2. Amplitude Modulation (_am_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
 
-3. Frequency Modulation (_fm_ , [ref](doi.org/10.1109/TBME.2013.2246160))
+3. Frequency Modulation (_fm_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
 
 4. Baseline Wander (_bw_ , [ref](http://peterhcharlton.github.io/RRest/yhvs_assessment.html))
 
-5. Peak Amplitude (_pk_ , [ref](doi.org/10.1109/TBME.2013.2246160))
+5. Peak Amplitude (_pk_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
 
-6. Trough Amplitude (_on_ , [ref](doi.org/10.1109/ICASSP.2010.5495584))
+6. Trough Amplitude (_on_ , [ref](http://doi.org/10.1109/ICASSP.2010.5495584))
 
-7. Mean Baseline Wander (_bwm_ , [ref](doi.org/10.1109/ICASSP.2010.5495584))
+7. Mean Baseline Wander (_bwm_ , [ref](http://doi.org/10.1109/ICASSP.2010.5495584))
 
 8. QRS duration (_qrsW_ , [ref](http://medicalresearchjournal.org/index.php/GJMR/article/view/315))
 
 9. QRS area (_qrsA_ , [ref](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5738022))
 
-10. Principle Component Analysis (_pca_ , [ref](doi.org/10.1109/TBME.2012.2186448)): _note that for this the freely available toolbox written by the LS-SVMlab, [here](http://www.esat.kuleuven.be/sista/lssvmlab/), was used._
+10. Principle Component Analysis (_pca_ , [ref](http://doi.org/10.1109/TBME.2012.2186448)): _note that for this the freely available toolbox written by the LS-SVMlab, [here](http://www.esat.kuleuven.be/sista/lssvmlab/), was used._
 
 ### Re-sampling
 
