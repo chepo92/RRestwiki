@@ -3,7 +3,7 @@ Several datasets are publicly available for use with _RRest_, as detailed [here]
 ## Using Publicly Available Datasets
 [Publicly available datasets](http://peterhcharlton.github.io/RRest/datasets.html) are either provided as part of the _RRest_ Project, or are available from other public sources. Those provided as part of the _RRest_ Project, such as the Vortal Dataset, are already in the required format for use with the _RRest_ toolbox. Those available from other public sources, such as the MIMICII Dataset can be easily used with the _RRest_ toolbox by downloading and re-formatting the datasets using the 'data_importer' scipts provided [here](https://github.com/peterhcharlton/RRest/tree/master/Data_Import).
 
-Once you have downloaded a dataset, you are ready to use _RRest_. You should specify its location to _RRest_ in the `up.paths.root_folder` variable, in the _setup_universal_params.m_ script.
+Once you have downloaded a dataset, you are ready to use _RRest_. You should specify its location to _RRest_ in the `up.paths.root_folder` variable, in the _setup_universal_params.m_ script. _RRest_ can be run using the command detailed [here](https://github.com/peterhcharlton/RRest/wiki/Getting-Started#run-your-first-analysis).
 
 ## Using Your Own Datasets
 You may alternatively wish to analyse your own dataset with _RRest_. There are three steps to doing so: formatting the your dataset correctly, saving it in the appropriate location, and calling _RRest_ appropriately. These are now explained:
