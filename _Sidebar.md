@@ -2,6 +2,7 @@
 * [Getting Started](https://github.com/peterhcharlton/RRest/wiki/Getting-Started)
 * [Input Data](https://github.com/peterhcharlton/RRest/wiki/Input-Data)
 * [Universal Parameters](https://github.com/peterhcharlton/RRest/wiki/Universal-Parameters)
+* [Algorithm Structure](https://github.com/peterhcharlton/RRest/wiki/Algorithm-Structure)
 * [Respiratory Signal Extraction](https://github.com/peterhcharlton/RRest/wiki/Respiratory-Signal-Extraction)
 * [Respiratory Rate Estimation](https://github.com/peterhcharlton/RRest/wiki/Respiratory-Rate-Estimation)
 * [Fusion of Respiratory Rates](https://github.com/peterhcharlton/RRest/wiki/Fusion-of-Respiratory-Rates)
