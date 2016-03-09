@@ -58,29 +58,29 @@ One ECG Beat detector has been used with the toolbox: the _rpeakdetect.m_ functi
 
 ### Feature Measurement
 Several techniques for measurement of features in ECG and/or PPG signals have been implemented. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following to specify all implemented techniques:<p>
-`up.al.options.FMe = {'pulW', 'am', 'fm', 'bw', 'pk', 'on', 'bwm', 'qrsW', 'qrsA', 'pca'};`
+`up.al.options.FMe = {'am', 'fm', 'bw', 'bwm', 'pk', 'on', 'qrsW', 'qrsA', 'pca', 'pulW'};`
 
 The techniques are as follows:
 
-1. PPG Pulse Width (_pulW_ , [ref](https://zaguan.unizar.es/record/31895))
+1. Amplitude Modulation (_am_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
 
-2. Amplitude Modulation (_am_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
+2. Frequency Modulation (_fm_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
 
-3. Frequency Modulation (_fm_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
+3. Baseline Wander (_bw_ , [ref](http://peterhcharlton.github.io/RRest/yhvs_assessment.html))
 
-4. Baseline Wander (_bw_ , [ref](http://peterhcharlton.github.io/RRest/yhvs_assessment.html))
+4. Mean Baseline Wander (_bwm_ , [ref](http://doi.org/10.1109/ICASSP.2010.5495584))
 
 5. Peak Amplitude (_pk_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
 
 6. Trough Amplitude (_on_ , [ref](http://doi.org/10.1109/ICASSP.2010.5495584))
 
-7. Mean Baseline Wander (_bwm_ , [ref](http://doi.org/10.1109/ICASSP.2010.5495584))
+7. QRS duration (_qrsW_ , [ref](http://medicalresearchjournal.org/index.php/GJMR/article/view/315))
 
-8. QRS duration (_qrsW_ , [ref](http://medicalresearchjournal.org/index.php/GJMR/article/view/315))
+8. QRS area (_qrsA_ , [ref](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5738022))
 
-9. QRS area (_qrsA_ , [ref](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5738022))
+9. Principle Component Analysis (_pca_ , [ref](http://doi.org/10.1109/TBME.2012.2186448)): _note that for this the freely available toolbox written by the LS-SVMlab, [here](http://www.esat.kuleuven.be/sista/lssvmlab/), was used._
 
-10. Principle Component Analysis (_pca_ , [ref](http://doi.org/10.1109/TBME.2012.2186448)): _note that for this the freely available toolbox written by the LS-SVMlab, [here](http://www.esat.kuleuven.be/sista/lssvmlab/), was used._
+10. PPG Pulse Width (_pulW_ , [ref](https://zaguan.unizar.es/record/31895))
 
 ### Re-sampling
 
@@ -105,12 +105,32 @@ The techniques are as follows:
 
 ## Specify the interchangeable technique(s) for RR Estimation
 The techniques to be used for estimation of RRs from respiratory signals must be specified. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following to specify all implemented techniques for use on both ECG and PPG signals:<p>
-`up.al.options.estimate_rr = {'FTS', 'ACF', 'ARPz', 'WCH', 'ARM', 'ARP', 'CtO', 'CtA', 'ARS', 'PKS', 'ZeX', 'PZX'};`
+`up.al.options.estimate_rr = {'FTS', 'ARS', 'ARM', 'ARP', 'ARPz', 'ACF', 'WCH', 'PKS', 'ZeX', 'PZX', 'CtO', 'CtA'};`
 
-The techniques are as follows:
+The techniques can be split into frequency- and time-domain techniques. The frequency-domain techniques are as follows:
 
 1. Fourier Transform (_FTS_ , [ref](http://doi.org/10.1109/TBME.2013.2246160))
 
-2. 
+2. Auto-regressive spectral analysis (_ARS_, [ref](http://doi.org/10.1109/MEMB.2002.1032638))
 
-## Analysis Settings
+3. Auto-regressive spectral analysis using the median spectrum for orders 2-20 (_ARM_, [ref](http://doi.org/10.3109/03091902.2015.1105316))
+
+4. Auto-regressive all-pole modelling (_ARP_, [ref](http://doi.org/10.1109/IEMBS.2008.4649554))
+
+5. Auto-regressive all-pole modelling with the lowest frequency pole corresponding to RR (_ARPz_, [ref](http://www.waset.org/publications/13323))
+
+6. Autocorrelation Function (_ACF_, [ref](http://doi.org/10.1007/s10439-007-9428-1))
+
+7. Welch Periodogram (_WCH_, [ref](https://zaguan.unizar.es/record/31895?ln=en))
+
+The time-domain techniques are as follows:
+
+1. Peak detection (_PKS_)
+
+2. Zero-crossing breath detection (_ZeX_, [ref](http://doi.org/10.1007/BF02348427))
+
+3. Combined breath detection using both peak detection and zero-crossings (_PZX_, [ref](http://www.ibme.ox.ac.uk/research/biomedical-signal-processing-instrumentation/prof-l-tarassenko/publications/pdf/s_fleming_thesis.pdf)
+
+4. Count-orig (_CtO_, [ref](http://doi.org/10.1007/s10439-007-9428-1))
+
+5. Count-adv (_CtA_, [ref](http://doi.org/10.1007/s10439-007-9428-1))
