@@ -11,17 +11,17 @@ Further details on the methods for extraction of respiratory signals are provide
 ## Specify the components for feature-based extraction of respiratory signals:
 If you choose to include the feature-based method for extraction of respiratory signals then the components contained within this method are specified as:
 
-1. Elimination of high frequencies (_EHF_);
+1. Elimination of very high frequencies (_EHF_);
 
-2. PPG pulse peak or R-spike detection (_PDt_ or _RDt_);
+2. Beat detection: PPG pulse peak or R-spike detection (_PDt_ or _RDt_);
 
 3. Fiducial point identification (_FPt_);
 
-4. Feature Measurement (_FMe_);
+4. Extraction of Feature Measurements (_FMe_);
 
-5. Re-sampling (_RS_);
+5. Re-sampling at a regular sampling frequency (_RS_);
 
-6. Elimination of low frequencies (_ELF_).
+6. Elimination of very low frequencies (_ELF_).
 
 These are specified for each signal using the following:
 `up.al.sub_components.ppg_feat = {'EHF', 'PDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
