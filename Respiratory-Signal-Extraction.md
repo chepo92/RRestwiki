@@ -1,6 +1,6 @@
 The first fundamental stage of the RR algorithms is 'Extraction of Respiratory Signals', in which a time series dominated by respiratory modulation is extracted from the original physiological signal. For example, in this figure respiratory signals extracted from the ECG (upper plot) and PPG (lower plot) are shown alongside breaths (dots):
 
-![Extraction of respiratory signals](http://haemod.uk/images/research/pete/rr_extraction.png)
+![Extraction of respiratory signals](https://cloud.githubusercontent.com/assets/9865941/13639447/af2e7a54-e608-11e5-8f26-58ba0aab83e0.png)
 
 Techniques for extraction of respiratory signals have been categorised into one of two methods: filter-based extraction, and feature-based extraction. Filter-based extraction includes techniques such as band-pass filtering to eliminate non-respiratory frequencies, and wavelet decomposition. Feature-based extraction consists of extracting a measurement, such as pulse wave amplitude, from each cardiac cycle. Feature-based extraction is performed using several components, as shown below:
 
