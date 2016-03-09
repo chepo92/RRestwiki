@@ -1,1 +1,1 @@
-abc
+The third fundamental stage of the RR algorithms is 'Respiratory Rate Estimation', in which multiple RRs are fused to provide one single output. This stage is optional.
