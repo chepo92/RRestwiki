@@ -40,4 +40,6 @@ Use the following command to call _RRest_ When using your own dataset:
 
 `RRest('dataset_name')`
 
-where `'dataset_name'` should be replaced with the name of the dataset. For instance, if your dataset is saved as _VORTAL_rest_data.mat_
+where `'dataset_name'` should be replaced with the name of the dataset. For instance, if your dataset is saved as _VORTAL_rest_data.mat_ then the appropriate command would be:
+
+`RRest('VORTAL_rest')`
