@@ -1,4 +1,4 @@
-The _RRest_ toolbox is a continually evolving resource, with new versions made available from time to time. This page is designed to answer the questions > Which version should I use? <, and > What's the difference? <.
+The _RRest_ toolbox is a continually evolving resource, with new versions made available from time to time. This page is designed to answer the questions _Which version should I use?_, and _What's the difference?_.
 
 The answers to these questions depend on whether you want to use _RRest_ to perform new studies, or to replicate existing studies:
 
