@@ -1,4 +1,4 @@
-# A toolbox of Respiratory Rate Algorithms
+# A Toolbox of Respiratory Rate Algorithms
 
 This page provides an overview of RRest, a toolbox of respiratory rate algorithms. Further information is available from the pages listed on the right hand side. 
 
