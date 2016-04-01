@@ -13,5 +13,7 @@ If you are using _RRest_ to replicate a study from the literature, then you shou
 ### Version 1
 * **[Waveform analysis to estimate respiratory rate](http://peterhcharlton.github.io/RRest/waveform_analysis.html)**: In this tutorial Version 1 of the toolbox was used to assess a few RR algorithms on ECG and PPG data from the [MIMIC II dataset](http://peterhcharlton.github.io/RRest/mimicii_dataset.html).
 
+### Version 2
+* **[An assessment of algorithms to estimate respiratory rate from the electrocardiogram and photoplethysmogram](http://peterhcharlton.github.io/RRest/yhvs_assessment.html)**: In this article Version 2 of the toolbox was introduced by assessing a wide range of existing RR algorithms on ECG and PPG data. Algorithm implementations were verified using the [Synthetic dataset](http://peterhcharlton.github.io/RRest/synthetic_dataset.html). Following this algorithms were applied to both the ECG and the PPG on the [Vortal dataset](http://peterhcharlton.github.io/RRest/vortal_dataset.html) (young subjects).
 
 One should note that there are two potential reasons for discrepancies between the results provided by the toolbox, and those reported in the literature. Firstly, minor changes may be made to a version of the toolbox to ensure that it is easily accessible. This should only have a minor affect on results. Secondly, some publications use only part of the toolbox for their analysis, and fill in the gaps with their own analysis methods. In this instance, the results can be expected to be broadly similar, but not the same.
