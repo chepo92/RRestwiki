@@ -5,7 +5,7 @@ Several widely used statistics are reported by the toolbox in the _stats_results
 * Percentage error
 * Mean (SD) absolute error
 * Root mean square error
-* Coverage Probability: the proportion of estimated RRs which are within 2 bpm of the reference [ref](http://doi.org/10.1080/10543400701376480)
+* Coverage Probability: the proportion of estimated RRs which are within 2 bpm of the reference ([ref](http://doi.org/10.1080/10543400701376480))
 * Proportion of windows for which an RR estimate is calculated
 * Total number of windows used in analysis
 
