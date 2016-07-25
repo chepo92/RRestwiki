@@ -1,7 +1,7 @@
 The toolbox contains a signal quality algorithm which is used to determine the quality of segments of ECG and PPG signals.
 This allows for automated detection of low quality segments, perhaps caused by motion artifact or poor sensor contact, which can then be eliminated from the analysis.
 
-#Signal Quality Indices#
+##Signal Quality Indices##
 
 The algorithms, or Signal Quality Indices (SQIs), used in this toolbox are those published by Orphanidou _et al._ [here](http://doi.org/10.1109/JBHI.2014.2338351).
 A summary of the algorithms is provided in Section 3.5 of [this publication](http://iopscience.iop.org/article/10.1088/0967-3334/37/4/610#pmeaaa1942s3).
