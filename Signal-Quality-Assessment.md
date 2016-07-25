@@ -10,3 +10,7 @@ The physiological plausibility of this set of heart beats is tested (_e.g._ by c
 If the signal passes this set of checks, then template matching is used to quantify the similarity of the morphologies of each beat in the signal. 
 If the similarity of the morphologies exceeds an empirical threshold, then this segment of signal is deemed to be of high quality.
 If the segment fails any of these tests then it is deemed to be of low quality.
+
+##The use of SQIs in _RRest_##
+
+to be continued ...
