@@ -18,7 +18,7 @@ This page provides an overview of RRest, a toolbox of respiratory rate algorithm
 
 <a name="what_is" />
 ## What is RRest?
-RRest is a toolbox of algorithms for estimation of respiratory rate from physiological signals. It is written in Matlab &reg format, and contains a wide range of algorithms previously reported in the literature. It is part of a larger project called the [Respiratory Rate Estimation](http://peterhcharlton.github.io/RRest/) project. The project contains additional material such as [data](http://peterhcharlton.github.io/RRest/datasets.html) to use with the algorithms, [publications](http://peterhcharlton.github.io/RRest/publications.html) arising from the project, and details of how to [make contributions](http://peterhcharlton.github.io/RRest/contributions.html).
+RRest is a toolbox of algorithms for estimation of respiratory rate from physiological signals. It is written in Matlab &reg; format, and contains a wide range of algorithms previously reported in the literature. It is part of a larger project called the [Respiratory Rate Estimation](http://peterhcharlton.github.io/RRest/) project. The project contains additional material such as [data](http://peterhcharlton.github.io/RRest/datasets.html) to use with the algorithms, [publications](http://peterhcharlton.github.io/RRest/publications.html) arising from the project, and details of how to [make contributions](http://peterhcharlton.github.io/RRest/contributions.html).
 
 <a name="what_does" />
 ## What does RRest do?
