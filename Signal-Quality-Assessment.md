@@ -15,4 +15,4 @@ If the segment fails any of these tests then it is deemed to be of low quality.
 
 SQIs are used in _RRest_ to determine the quality of ECG and PPG signals.
 The quality of each window is deemed to be either high or low.
-Any windows deemed to be of low quality are excluded from the statistical analyses.
+Any windows deemed to be of low quality are excluded from the statistical analyses, ensuring that conclusions are only based on high quality signal segments.
