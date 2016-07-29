@@ -1,0 +1,5 @@
+_RRest_ is version-controlled, allowing any issues to be resolved in future versions. Previous versions are retained for posterity, to allow prior analyses to be replicated. The following issues have been found:
+
+## Input signal to signal quality indices ##
+
+... tbc
