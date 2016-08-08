@@ -23,7 +23,7 @@ Further details on the stages of the algorithms are provided in [this publicatio
 
 ## Specify the methods for extraction of respiratory signals:
 Techniques for extraction of respiratory signals have been categorised into one of two methods: filter-based extraction, and feature-based extraction. Filter-based extraction includes techniques such as band-pass filtering to eliminate non-respiratory frequencies, and wavelet decomposition. Feature-based extraction consists of extracting a measurement, such as pulse wave amplitude, from each cardiac cycle. Any number of the following approaches, consisting of signal and respiratory signal extraction method, can be specified:<p>
-`up.al.options.extract_resp_sig = {'ekg_filt', 'ppg_filt', 'ekg_feat', 'ppg_feat',};` <p>
+`up.al.options.extract_resp_sig = {'ekg_filt', 'ppg_filt', 'ekg_feat', 'ppg_feat'};` <p>
 Further details on the methods for extraction of respiratory signals are provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html).
 
 ## Specify the components for feature-based extraction of respiratory signals:
