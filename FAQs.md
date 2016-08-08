@@ -10,3 +10,7 @@ Here are a few of the questions that are frequently asked about _RRest_. These a
 
 ## How can I create the synthetic dataset?
 <a name="create_synth" />
+The [synthetic dataset](http://peterhcharlton.github.io/RRest/synthetic_dataset.html) can be created using the Matlab &reg; script available [here](https://raw.githubusercontent.com/peterhcharlton/RRest/master/RRest_v2.0/Data_Import_Scripts/RRSYNTH_data_generater.m). 
+
+This will generated simulated ECG and PPG signals, subjected to the three respiratory modulations: baseline wander (BW), amplitude modulation (AM), and frequency modulation (FM).
+If you only wish to generate a subset of these signals (such as only ECG, subject to only BW and AM), then you can do so by specifying the required signals and modulations in `setup_params` function.
