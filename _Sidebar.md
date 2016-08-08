@@ -12,3 +12,4 @@
 * [Toolbox Versions](https://github.com/peterhcharlton/RRest/wiki/Toolbox-Versions)
 * [System Requirements](https://github.com/peterhcharlton/RRest/wiki/System-Requirements)
 * [Known Issues](https://github.com/peterhcharlton/RRest/wiki/Known-Issues)
+* [Frequently Asked Questions](https://github.com/peterhcharlton/RRest/wiki/FAQs)
