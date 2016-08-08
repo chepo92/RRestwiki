@@ -10,7 +10,7 @@ Here are a few of the questions that are frequently asked about _RRest_. These a
 _RRest_ can be used to run many RR algorithms (several hundred) on multiple input signals (such as ECG and PPG).
 However, you may only wish to run a subset of these algorithms, on a subset of input signals.
 To do so, modify the [_Universal Parameters_](https://github.com/peterhcharlton/RRest/wiki/Universal-Parameters) accordingly.
-For instance, you may only wish to run algorithms using a subset of the available feature measurement techniques. Perhaps you only want to use BW, AM and FM feature measurements. In this case you would modify `up.al.options.FMe`, which can be found in the _setup_universal_params.m_ script. Further instructions are given [here](<a href="https://github.com/peterhcharlton/RRest/wiki/Universal-Parameters#feats">).
+For instance, you may only wish to run algorithms using a subset of the available feature measurement techniques. Perhaps you only want to use BW, AM and FM feature measurements. In this case you would modify `up.al.options.FMe`, which can be found in the _setup_universal_params.m_ script. Further instructions are given [here](https://github.com/peterhcharlton/RRest/wiki/Universal-Parameters#feats).
 
 ## How can I create the synthetic dataset?
 <a name="create_synth" />
