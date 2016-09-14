@@ -4,6 +4,8 @@ Here are a few of the questions that are frequently asked about _RRest_. These a
 
 * <a href="#create_synth">How can I create the synthetic dataset?</a>
 
+* <a href="#too_long">This is taking too long!</a>
+
 
 ## How can I run only a subset of the algorithms?
 <a name="subset_algs" />
@@ -21,3 +23,11 @@ The [synthetic dataset](http://peterhcharlton.github.io/RRest/synthetic_dataset.
 
 This will generated simulated ECG and PPG signals, subjected to the three respiratory modulations: baseline wander (BW), amplitude modulation (AM), and frequency modulation (FM).
 If you only wish to generate a subset of these signals (such as only ECG, subject to only BW and AM), then you can do so by specifying the required signals and modulations in `setup_params` function.
+
+## This is taking too long!
+<a name="too_long" />
+If you find that the processing is taking too long, then it may be helpful to try conducting a smaller set of processing to begin with. There are a couple of steps you can take to speed things up in the first instance:
+
+* **Conduct the processing on a smaller number of subjects:** You can discard subjects from a Matlab &reg; data file by editing the file in Matlab &reg;.
+
+* **Use a subset of the available algorithms:** The toolbox is set up to run a complete analysis over all the possible algorithms. However, some of the algorithms take much longer than others to run. Therefore, you can reduce the run-time considerably by following the instructions <a href="#subset_algs">here</a>. In particular, the _pca_ technique specified in `up.al.options.FMe' takes a long time, so it would be prudent to eliminate this to begin with. Furthermore, you can eliminate the fusion step of the algorithms by removing the entry from `up.al.key_components'.
