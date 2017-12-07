@@ -6,8 +6,10 @@ These are easily found towards the top of _setup_universal_params.m_, and should
 # Speeding up the Toolbox
 The toolbox contains many algorithms, and by default it runs all of the algorithms. If you want to speed up the toolbox then I'd recommend disabling some of the more time consuming algorithms. This can be quickly achieved by adjusting the following lines of the _Universal Parameters_:
 * `up.al.options.FMe = {'am', 'fm', 'bw', 'bwm', 'pk', 'on', 'qrsW', 'qrsA', 'pca', 'pulW'};`
+
 should be replaced with:
-`up.al.options.FMe = {'am', 'fm', 'bw'};'
+`up.al.options.FMe = {'am', 'fm', 'bw'};`
+
 In particular, the 'pca' technique is particularly time-consuming.
 
 # Algorithms
