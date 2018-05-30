@@ -9,6 +9,7 @@ Here are a few of the questions that are frequently asked about _RRest_. These a
 
 <a name="subset_algs" />
 ## How can I run only a subset of the algorithms?
+
 _RRest_ can be used to run many RR algorithms (several hundred) on multiple input signals (such as ECG and PPG).
 However, you may only wish to run a subset of these algorithms, on a subset of input signals.
 To do so, modify the [_Universal Parameters_](https://github.com/peterhcharlton/RRest/wiki/Universal-Parameters) accordingly.
