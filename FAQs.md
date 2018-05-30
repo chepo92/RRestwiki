@@ -8,6 +8,7 @@ Here are a few of the questions that are frequently asked about _RRest_. These a
 
 
 <a name="subset_algs" />
+
 ## How can I run only a subset of the algorithms?
 
 _RRest_ can be used to run many RR algorithms (several hundred) on multiple input signals (such as ECG and PPG).
@@ -19,6 +20,7 @@ For instance, you may only wish to run algorithms using a subset of the availabl
 You may also only wish to use a subset of the available input signals, such as just the ECG. In this case you would similarly modify `up.al.options.extract_resp_sig`, within the _setup_universal_params.m_ script. Further instructions are given [here](https://github.com/peterhcharlton/RRest/wiki/Universal-Parameters#extract_resp_sigs).
 
 <a name="create_synth" />
+
 ## How can I create the synthetic dataset?
 The [synthetic dataset](http://peterhcharlton.github.io/RRest/synthetic_dataset.html) can be created using the Matlab &reg; script available [here](https://raw.githubusercontent.com/peterhcharlton/RRest/master/RRest_v2.0/Data_Import_Scripts/RRSYNTH_data_generater.m), which is within the overall script.
 
@@ -26,6 +28,7 @@ This will generated simulated ECG and PPG signals, subjected to the three respir
 If you only wish to generate a subset of these signals (such as only ECG, subject to only BW and AM), then you can do so by specifying the required signals and modulations in `setup_params` function.
 
 <a name="too_long" />
+
 ## This is taking too long!
 If you find that the processing is taking too long, then it may be helpful to try conducting a smaller set of processing to begin with. There are a couple of steps you can take to speed things up in the first instance:
 
