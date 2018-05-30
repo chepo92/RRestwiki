@@ -1,4 +1,4 @@
-If you are new to RRest it is recommended that you follow these steps to gain familiarity with the toolbox:
+If you are new to RRest it is recommended that you follow these steps to gain familiarity with the toolbox. These steps are demonstrated in this [video](https://youtu.be/J4ZG3QntTI8).
 
 ## Download a sample dataset
 Several datasets are compatible with the toolbox (as listed [here](http://peterhcharlton.github.io/RRest/datasets.html)). Of these, the Synthetic Dataset, named 'RRSYNTH', is perhaps the easiest one to start with. Instructions on how to obtain the dataset are available [here](http://peterhcharlton.github.io/RRest/synthetic_dataset.html).
@@ -10,5 +10,3 @@ The _Universal Parameters_ are a set of parameters which are used throughout the
 _RRest_ is the main script which runs the analysis. It takes a single input specifying the dataset to be analysed, such as the 'RRSYNTH' dataset. Use a command such as this to run _RRest_:
 
 `RRest('RRSYNTH')`
-
-## For example ...
