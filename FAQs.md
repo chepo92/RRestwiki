@@ -13,7 +13,7 @@ Here are a few of the questions that are frequently asked about _RRest_. These a
 
 ## How can I get the algorithms to run?
 
-The algorithms should be relatively straightforward to run for the [datasets](http://peterhcharlton.github.io/RRest/datasets.html) provided. If you are having difficulty getting the algorithms to run then do have a look at the instructions provided for running the algorithms with the Synthetic Dataset [here](https://github.com/peterhcharlton/RRest/wiki/Getting-Started).
+The algorithms should be relatively straightforward to run for the [datasets](http://peterhcharlton.github.io/RRest/datasets.html) provided. If you are having difficulty getting the algorithms to run then do have a look at the instructions provided for running the algorithms with the Synthetic Dataset [here](https://github.com/peterhcharlton/RRest/wiki/Getting-Started), which include an introductory [video](https://youtu.be/J4ZG3QntTI8).
 
 <a name="subset_algs" />
 
