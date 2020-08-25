@@ -210,7 +210,7 @@ algorithms
 │
 ├───calculate_sqi
 │       calculate_sqi.m
-│
+│           % calculates SQIs from the filtered ECG and PPG signals, evaluated for each window with 10s sub windows
 ├───calc_stats
 │       calc_stats.m
 │            %CALC_STATS calculates statistics based on the estimated and ref RRs

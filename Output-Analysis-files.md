@@ -29,6 +29,8 @@ for the entire dataset, the following files are made:
 
 
 ## Outputs to: Analysis_files\Results\Figures
+- Optional figures
+
 
 ## Outputs to: Analysis_files\Results\Tables
 
