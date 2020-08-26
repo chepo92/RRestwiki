@@ -2,9 +2,9 @@ The third fundamental stage of the RR algorithms is 'Fusion of Respiratory Rate 
 
 ## Specify the interchangeable technique(s) for Fusion of RR Estimates
 The techniques to be used for fusion of RR estimates must be specified. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following settings in _setup_universal_params.m_ to specify all implemented techniques for use on both ECG and PPG signals:
-<p> `up.al.options.fuse_rr = {'fus_mod', 'fus_temp'};`
-<p> `up.al.sub_components.fus_mod = {'SFu', 'SPA', 'PMC', 'PRC'};`
-<p> `up.al.sub_components.fus_temp = {'TFu'};`
+`up.al.options.fuse_rr = {'fus_mod', 'fus_temp'};` <p>
+`up.al.sub_components.fus_mod = {'SFu', 'SPA', 'PMC', 'PRC'};` <p>
+`up.al.sub_components.fus_temp = {'TFu'};` <p>
 
 The techniques can be split into modulation- and temporal-fusion techniques. The modulation-fusion techniques are as follows:
 
