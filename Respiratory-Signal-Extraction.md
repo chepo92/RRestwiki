@@ -29,6 +29,7 @@ If you choose to include the feature-based method for extraction of respiratory 
 6. Elimination of very low frequencies (_ELF_).
 
 These are specified for each signal using the following:
+
 `up.al.sub_components.ppg_feat = {'EHF', 'PDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
 `up.al.sub_components.ekg_feat = {'EHF', 'RDt', 'FPt', 'FMe', 'RS', 'ELF'};` <p>
 
@@ -38,15 +39,26 @@ It is recommended that these are left alone. Further details on the components f
 Now that the components of feature-based extraction have been specified, you can specify which technique(s) you would like to use for each component. If you specify multiple techniques for any component, then the code will run all possible combinations of the specified techniques. At least one techniques should be specified for each of the following components:
 
 ### Beat detection
-One PPG Pulse peak detector has been implemented: the Incremental-Merge Segmentation algorithm presented in [this publication](http://doi.org/10.1109/EMBC.2012.6346628).<p>
-`up.al.options.PDt = {'IMS'};`
+PPG Pulse peak detection, Available methods: 
+1. 'DCl'
 
-One ECG Beat detector has been used with the toolbox: the _rpeakdetect.m_ function written by Prof G. Clifford, which is available [here](http://www.mit.edu/~gari/CODE/ECGtools/ecgBag/rpeakdetect.m).<p>
-`up.al.options.RDt = {'GC'};`
+2. 'COr'
+
+3. 'IMS', the Incremental-Merge Segmentation algorithm presented in [this publication](http://doi.org/10.1109/EMBC.2012.6346628).<p>
+
+These are specified for PPG signal using the following:
+`up.al.options.PDt = {'DCl', 'COr', 'IMS'};`
+
+ECG Beat detection
+1. 'GC' the _rpeakdetect.m_ function written by Prof G. Clifford, which is available [here](http://www.mit.edu/~gari/CODE/ECGtools/ecgBag/rpeakdetect.m).<p>
+2. 'ME'
+
+These are specified for EKG signal using the following:
+`up.al.options.RDt = {'GC', 'ME'};`
 
 ### Feature Measurement
 Several techniques for measurement of features in ECG and/or PPG signals have been implemented. A brief description of each technique is provided in [this publication](http://peterhcharlton.github.io/RRest/yhvs_assessment.html). Use the following to specify all implemented techniques:<p>
-`up.al.options.FMe = {'am', 'fm', 'bw', 'bwm', 'pk', 'on', 'qrsW', 'qrsA', 'pca', 'pulW'};`
+`up.al.options.FMe = {'am', 'fm', 'bw', 'bwm', 'pk', 'on', 'qrsW', 'qrsA', 'pca', 'pulW', 'qrS', 'rsS', 'Rang'};`
 
 The techniques are as follows:
 
@@ -70,9 +82,19 @@ The techniques are as follows:
 
 10. PPG Pulse Width (_pulW_ , [ref](https://zaguan.unizar.es/record/31895))
 
+11. (_qrS_)
+
+12. (_rsS_)
+
+13. (_Rang_)
+
 ### Re-sampling
 
-Next the irregularly-sampled feature-based respiratory signals are resampled at a constant sampling rate using linear, interpolation, cubic spline interpolation, or [Berger's method](doi.org/10.1109/TBME.1986.325789). These techniques can be optionally followed by band-pass filtering if desired, by adding _B_ to the end of the name. The possible options are:
+Next the irregularly-sampled feature-based respiratory signals are resampled at a constant sampling rate using linear interpolation (_lin_), cubic spline interpolation (_cub_), or [Berger's method](doi.org/10.1109/TBME.1986.325789) (_brg_). 
+
+These techniques can be optionally followed by band-pass filtering if desired, by adding _B_ to the end of the name. 
+
+The possible options are:
 
 `up.al.options.RS = {'lin', 'linB', 'cub', 'cubB', 'brg', 'brgB'};`
 
